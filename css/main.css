@@ -1,0 +1,242 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--primary-color);
+}
+:root {
+    --font-family: "Helvetica", "Calibri";
+    --normal-foint:400;
+    --bold-font:700;
+    --bolder-font:900;
+    --bg-color:#fcfcfc;
+    --primar-color: #5fcf80;
+    --second-color: #90e7e9;
+    --primary-shawow:#8b8eaf;
+    --second-shawow:#a17a69;
+    --bottom-margin:1rem;
+    --bottom-margin-2:1.5rem;
+    --line-height:2rem;
+    --transition:0.4s;
+}
+html{
+    scroll-behavior: smooth;
+}
+.header-link.active{
+    color: var(--primar-color);
+}
+nav a:hover {
+    color: var(--primar-color);
+    border-bottom: 2.8px solid var(--primar-color);
+}
+footer a:hover {
+    color: var(--primar-color);
+}
+body {
+    margin: 0;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    display: flex;
+    height: 40px;
+    justify-content:space-around;
+    align-items: center;
+    background-color: var(--bg-color);
+    padding: 1.5rem 3.7rem;
+    border-bottom:1px solid rgba(0,0,0,0.1) ;
+}
+div {
+    width: 50%;
+}
+
+nav h1{
+    color: var(--primar-color);
+}
+
+a {
+    color: black;
+    transition: var(--transition);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.project-card a{
+    font-size: 0.8rem;
+    color: var(--primar-color);
+}
+
+
+
+nav ul { 
+    display: flex;
+    gap: 1.9rem;
+}
+nav ul li a {
+    padding-top: 0.8rem;
+    padding-bottom: 0.3rem;
+}
+
+section.container{
+    display: flex;
+    margin-top: 20px;
+    justify-content: start;
+    align-items: center;
+    align-content: center;
+    margin: auto;
+    padding: 1rem 0rem;
+    width: 75vw;
+    
+}
+.self {
+    width: 250px;
+    height:auto;
+}
+section img {
+    border-radius:50% ;
+    box-shadow: 2px 2px 5px var(--primary-shawow);
+}
+nav ul li {
+    font-weight: 500;
+}
+.about-me{
+    line-height: var(--line-height);
+    pad: 0.3rem 0;
+}
+.about-text{
+    line-height: 1.5rem;
+
+}
+.bio {
+    width: 25rem;
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.2);
+}
+.bio h1{
+    margin-bottom: var(--bottom-margin);
+    padding-bottom: 1rem;
+}
+/* .header-link{
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+} */
+
+body {
+    font-family: var(--font-family);
+}
+
+.about-more h2{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+img.icon{
+    width: 100px;
+    height: 100px;
+}
+.skill-row{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+    justify-content: center;
+    font-display: auto;
+
+}
+.skill-container img{
+    padding: 0.8rem;
+}
+.skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skill-container{
+    display: flex;
+    gap: 0.8rem;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skill-title{
+    margin-bottom: 1.3rem;
+    margin-top: 1.5rem;
+}
+
+.about-more p{
+    line-height: var(--line-height);
+    padding: 0.8rem;
+    
+}
+
+section.projects{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+    /* width: 100vw; */
+}
+.project-container-row{
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-direction: auto;
+    justify-content: space-evenly;
+}
+.project-card{
+    margin: 0 5px;
+}
+
+.project-card img{
+    width: 25vw;
+    height: auto;
+    border-radius:0 ;
+}
+.projects{
+    padding-top: 2rem;
+}
+
+.projects h2{
+    padding-bottom: 1rem;
+}
+.projects div *{
+    padding-top: 0.8rem;
+    /* padding-bottom: 0.8rem; */
+}
+.project-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px var(--primary-shadow);
+    padding: 20px;
+    margin: 10px;
+  }
+
+  footer{
+    width: 100%;
+    display: flex;
+    align-items: center; 
+    line-height: 1.5rem;
+    justify-content:center;
+    padding: 1rem 1rem;
+    gap: 20%;
+    background-color: #eef0ef;
+    flex-direction: row;
+    
+  }
+  footer .name{
+    color: var(--primar-color);
+  }
+  footer div {
+    width: auto;
+  }
+
+  
